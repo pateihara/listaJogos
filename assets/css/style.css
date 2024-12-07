@@ -1,55 +1,401 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+  padding-top: 80px;
+
+}
+.navbar {
+    background-color: var(--preto);
+    height: 80px;
+}
+.nav-link {
+    color: white;
+    letter-spacing: 1px;
+}
+.form-control{
+    background-color: transparent;
+    border: 2px solid var(--cinza-medio);
+    border-radius: 100px;
+    transition: background-color 0.3s, border-color 0.3s; 
+    color: white;
+}
+
+.form-control::placeholder{
+    color: var(--cinza-claro);
+    opacity: 50%;
+}
+
+.form-control:hover{
+    outline: 3px solid var(--amarelo-escuro); 
+}
+
+.form-control:focus{
+    background-color:transparent;
+    outline: 2px solid var(--amarelo-escuro); 
+    box-shadow: none;
+}
+
+.btn-primary{
+    background-color:var(--amarelo-escuro);
+    border-radius: 100px;
+    color: var(--cinza-escuro);
+    border: none;
+    margin: 0.25rem;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
+}
+
+.btn-secondary{
+    background-color: var(--verde-claro);
+    border-radius: 100px;
+    color: var(--cinza-escuro);
+    border: none;
+    margin: 0.25rem;
+
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
+}
+
+.imgBackground{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 20,20, 0.9)),
+    url('../img/mainBanner.png');
+    background-size: cover;
+    background-position: center;
+    height: 380px;    
+}
+
+.imgBackgroundIndex{
+  background-image: url('../img/mainBannerIndex.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  align-content: center;
+}
+.BackgroundIndexIara{
+  background: linear-gradient(120deg, 
+    rgba(30, 26, 120, 0.83) 0%, 
+    rgba(0, 122, 51, 0.83) 41%, 
+    rgba(255, 186, 0, 0.83) 93%);
+   }
+
+
+.btn-banner:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
+}
+
+  .btn-banner{
+    width: 10rem;
+    padding: auto;
+    margin: 0.25rem;
+    background-color: color(--cinza-claro) !important;
+  }
+
+  .BackgroundIndexGray{
+    background: #252525;
+    }
+
+.game-details-info {
+    background-color: white;
     padding: 20px;
-  }
-  
-  #search-container {
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .game-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-    width: 200px;
-    box-sizing: border-box;
-  }
-  
-  .game-card img {
+    border-radius: 20px;
+}
+
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:var(--cinza-escuro);
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+h6{
+    font-size: 0.825rem;
+    font-weight: 200;
+}
+
+.bannerSell{
+    margin: 5px;
+    background: var(--bg-gradient);
+    border-radius: 20px;
+}
+
+.buttonSell{
+    height: 55px;
     width: 100%;
-    border-radius: 8px;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    background-color:var(--azul-escuro);
+    color: var(--cinza-claro);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border:none
+}
+
+.buttonSell:hover {
+    background-color: transparent;
+    outline: 3px solid var(--cinza-claro);
+    letter-spacing: 1px;
+    border: none;
+}
+
+.textSell{
+    color:var(--cinza-claro);
+    font-size:2rem;
+    font-weight: 700;
+}
+.textBanner{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--cinza-claro);
+}
+.textHigh{
+    margin-top: -13rem;
+}
+
+.game-info {
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.pcConfig {
+    width: 100%;
+    border-collapse: collapse;
+    letter-spacing: -0.5px;
+}
+
+.pcConfig th {
+    border: 1px solid var(--cinza-medio);
+    padding: 8px;
+    text-align: left;
+}
+
+.pcConfig td {
+    border: 1px solid var(--cinza-medio);
+    padding: 7px;
+    text-align: left;
+}
+
+@media (max-width: 1400px) {
+    .game-first-info{
+        background-color: var(--cinza-escuro) ;
+        padding: 20px;
+        border-radius: 20px;
+        font-weight: 400;
+    }
+    
+    .game-details-info th {
+        background-color: var(--cinza-escuro);
+        text-align: left;
+        color: white;
+    }
+    
+    .game-details-info td {
+        background-color: var(--cinza-escuro);
+        padding: 0.75rem;
+        text-align: left;
+        color: white; 
+    }
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color: var(--cinza-claro);
+    padding: 20px 0;
+}
+
+.footer-nav-list {
+    list-style: none;
+    margin-left: -30px;
+    font-size: 0.9rem;
+}
+footer a {
+    color: var(--cinza-escuro);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--azul-escuro);
+    font-weight: 600;
+}
+
+
+.footer-logo{
+    max-width: 180px; 
+    margin: 0 auto;
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--azul-escuro);
+}
+
+.game-info p {
+  color: #f39c12; /* Cor do texto para avaliação */
+  font-weight: bold;
+}
+
+
+/* Container da Row */
+#games-container {
+  margin-top: 30px;
+}
+
+/* Cards com margens internas e externas */
+.game-card {
+  margin-bottom: 30px;  /* Espaçamento entre os cards */
+}
+
+/* Garantir o espaçamento dentro de cada card */
+.card {
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 100%;  /* Para que os cards mantenham uma altura consistente */
+}
+
+/* Ajuste para responsividade */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-price {
+  margin-top: auto; /* Empurra o preço para o fundo */
+}
+
+.card-btn {
+  margin-top: auto; /* Empurra o botão "Saiba mais" para o fundo */
+}
+
+
+@media (max-width: 576px) {
+  /* Para telas muito pequenas, um card por linha */
+  .game-card {
+    flex: 1 1 100%; /* Força um card por linha */
   }
-  
-  .game-card h2 {
-    font-size: 18px;
-    margin: 10px 0;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Para telas pequenas (tablets), 2 cards por linha */
+  .game-card {
+    flex: 1 1 48%;
   }
-  
-  .game-card p {
-    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  /* Para telas grandes (desktops), 5 cards por linha */
+  .game-card {
+    flex: 1 1 19%;  /* Aproximadamente 5 cards por linha */
   }
-  
-  /* Estilo para jogos brasileiros */
-  .brazilian-game {
-    border: 2px solid #4CAF50; /* Verde para jogos brasileiros */
-    background-color: #e8f5e9;
-  }
-  
-  .brazilian-game p {
-    color: #4CAF50;
-    font-weight: bold;
-  }
-  
+}
+
+.game-card img {
+  width: 100%; /* A largura da imagem ocupa 100% do seu container */
+  height: 200px; /* A altura é fixa, mas pode ser ajustada conforme necessário */
+  object-fit: cover; /* A imagem será redimensionada para cobrir o espaço, sem perder a proporção */
+  object-position: center; /* Garante que o centro da imagem seja exibido caso ela seja cortada */
+}
+
+.white{
+  color: #fff;
+}
+
+.width32{
+  width: 10rem;
+}
+
+/* Ajuste no tamanho da imagem de cada categoria */
+.imgBackgroundCategory1,
+.imgBackgroundCategory2,
+.imgBackgroundCategory3,
+.imgBackgroundCategory4,
+.imgBackgroundCategory5 {
+  background-size: cover;
+  background-position: center;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Bordas arredondadas para as imagens */
+}
+
+/* Adicionando texto no meio das imagens */
+.imgBackgroundCategory1 h3,
+.imgBackgroundCategory2 h3,
+.imgBackgroundCategory3 h3,
+.imgBackgroundCategory4 h3,
+.imgBackgroundCategory5 h3 {
+  color: #000; /* Texto branco */
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+}
+
+/* Ajuste nas classes específicas de fundo */
+.imgBackgroundCategory1 {
+  background-image: url('../img/categoryCard1.png');
+}
+
+.imgBackgroundCategory2 {
+  background-image: url('../img/categoryCard2.png');
+}
+
+.imgBackgroundCategory3 {
+  background-image: url('../img/categoryCard3.png');
+}
+
+.imgBackgroundCategory4 {
+  background-image: url('../img/categoryCard4.png');
+}
+
+.imgBackgroundCategory5 {
+  background-image: url('../img/categoryCard5.png');
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between; /* Distribui os cards de forma igual na linha */
+  align-items: center; /* Alinha verticalmente no centro */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+  gap: 1rem; /* Espaço entre os cards */
+}
+
+.textRight{
+  text-align: end;
+}

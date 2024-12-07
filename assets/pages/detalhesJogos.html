@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iara Games</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top p-2 ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/iara logo.png"
+                        alt="Logotipo Iara Games" srcset=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse mx-2 my-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link fw-medium" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item ms-2 me-2">
+                            <a class="nav-link fw-medium" href="#">Mais Vendidos</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex mx-2 my-2" role="search">
+                        <!-- <i class="fa-solid fa-magnifying-glass me-2"></i> -->
+                        <input id="searchInput" class="form-control me-2 text-warning" type="search"
+                            placeholder="&#128269; Pesquisar" aria-label="Pesquisar">
+                    </form>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2 my-2">
+                            <button type="button" class="btn btn-primary position-relative fw-semibold">
+                                <i class="fa-solid fa-bag-shopping me-2"></i> Carrinho
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">10+</span>
+                            </button>
+                        </li>
+                        <li class="nav-item mx-2 my-2">
+                            <button type="button" class="btn btn-secondary fw-semibold">
+                                <i class="fa-solid fa-user me-2"></i> Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mb-5">
+        <section>
+            <div class="imgBackground"></div>
+            <div class="container">
+                <div class="row textHigh">
+                    <div class="game-first-info mb-5 col-12 col-sm-12 col-md-6">
+                        <h1>Chroma Squad</h1>
+                        <p class="mb-5 fs-6 pb-4 text-light">Chroma Squad é um RPG tático sobre cinco dublês que decidem
+                            sair de seus trabalhos e criar o seu próprio estúdio de TV inspirado em Power Rangers!
+                            Contrate atores, compre equipamentos e melhorias para o seu estúdio, crie armas e robôs
+                            gigantes feitos de papelão e fita crepe.
+                        </p>
+                        <table class="game-details-info table table-borderless ">
+                            <tr>
+                                <th>Análises recentes:</th>
+                                <td>Mais Positivas (13)</td>
+                            </tr>
+                            <tr>
+                                <th>Todas as análises:</th>
+                                <td>Extremamente Positivas (2,716)</td>
+                            </tr>
+                            <tr>
+                                <th>Data de lançamento:</th>
+                                <td>30/04/2015</td>
+                            </tr>
+                            <tr>
+                                <th>Desenvolvedor:</th>
+                                <td>Behold Studios</td>
+                            </tr>
+                            <tr>
+                                <th>Distribuidor:</th>
+                                <td>Behold Studios</td>
+                            </tr>
+                        </table>
+                        <h5>
+                            <span class="badge rounded-pill text-bg-success">RPG</span>
+                            <span class="badge rounded-pill text-bg-success">Estratégia</span>
+                            <span class="badge rounded-pill text-bg-success">RPG Tático</span>
+                            <span class="badge rounded-pill text-bg-success">Indie</span>
+                        </h5>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/Vrl2bCBzqRc?si=jvev6PuS5aYkfBK3"
+                                title="Chroma Squad - Official Release Trailer" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <iframe src=" https://www.youtube.com/embed/_7kj9fP66MA" title="YouTube video" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="row bannerSell align-items-center p-5">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <p class="textSell pt-2">R$46,99</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <button class="buttonSell fw-semibold">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="game-info col-12">
+                    <h2>Sobre o Jogo</h2>
+                    <p>
+                        Chroma Squad é um RPG tático sobre cinco dublês que decidem sair de seus trabalhos e criar o seu
+                        próprio estúdio de TV inspirado em Power Rangers! Contrate atores, compre equipamentos e
+                        melhorias para o seu estúdio, crie armas e robôs gigantes feitos de papelão e fita crepe. Assim
+                        que ligar as câmeras, você controla o seu time de cinco guerreiros cromáticos vestidos de colant
+                        em batalhas por turno épicas!
+                    </p>
+                    <ul class="mb-4">
+                        <li>Customize o seu estúdio de TV: contrate atores, melhore seus equipamentos, faça marketing,
+                            crie armas e robôs gigantes!</li>
+                        <li>RPG Tático de combate com um diferencial: combine os ataques de seus heróis com habilidades
+                            em time!</li>
+                        <li>Sistema profundo de RPG com árvore de habilidades, equipamentos aleatórios, criação de
+                            equipamentos, e história com 3 finais diferentes!</li>
+                        <li>Combate de Robôs Gigantes - Destrua a cidade para salvar a cidade!</li>
+                        <li>Uma carta de amor aos Power Ranges, Super Sentais, Tolusatsu e as séries japonesas de nossas
+                            infâncias.</li>
+                        <li>Pixel Art deliciosamente animado com trilha sonora chiptune que brilha como a justiça!</li>
+                    </ul>
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/ss_ff8dca16450c2c9a998612031b12c46cb90423a4.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_fbfe9066178eedc6645c3d4d29889f5d90f9e48a.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_edeb0a31956b27b91098ceb35a4052cbd686da82.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_9cdbbeb7fcc45bedfe1418a7bf04dca03bb7fd72.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_7b1d1407dcee63a99c94fc8c16eed430c1f8fd9a.600x338.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_37b273218c62491f3ac5352d1bbf009b6e0ffb6f.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_230cc7f789645e3f63516a712decaf8c111c3bd0.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/ss_09eab70a1e76e341876d880ae85fa22bd5cf1ee9.1920x1080.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="mb-4">Requisitos de sistema</h2>
+                    <div class="row">
+                        <div class="mb-4 col-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3 class="mb-3">Configuração mínima Windows:</h3>
+                            <table class="pcConfig">
+                                <thead>
+                                    <tr>
+                                        <th>Característica</th>
+                                        <th>Especificação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SO</td>
+                                        <td>Windows XP or later (64 bits)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processador</td>
+                                        <td>2000 Mhz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memória</td>
+                                        <td>512 MB de RAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Placa de Vídeo</td>
+                                        <td>640x480 minimum resolution (Direct3D/OpenGL compatible card with at least
+                                            128MB)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DirectX</td>
+                                        <td>Versão 9.0c</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Armazenamento</td>
+                                        <td>250 MB de espaço disponível</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Placa de som</td>
+                                        <td>2D sound compatible card</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mb-4 col-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3 class="mb-3">Configuração mínima MacOS:</h3>
+                            <table class="pcConfig">
+                                <thead>
+                                    <tr>
+                                        <th>Característica</th>
+                                        <th>Especificação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SO</td>
+                                        <td>OS X 10.4 or later</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processador</td>
+                                        <td>2000 Mhz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memória</td>
+                                        <td>512 MB de RAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Placa de Vídeo</td>
+                                        <td>640x480 minimum resolution (Direct3D/OpenGL compatible card with at least
+                                            128MB)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Armazenamento</td>
+                                        <td>250 MB de espaço disponível</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Placa de som</td>
+                                        <td>2D sound compatible card</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3 class="mb-3">Configuração mínima Linux:</h3>
+                            <table class="pcConfig">
+                                <thead>
+                                    <tr>
+                                        <th>Característica</th>
+                                        <th>Especificação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SO</td>
+                                        <td>Ubuntu 10 or later</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Processador</td>
+                                        <td>2000 Mhz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Memória</td>
+                                        <td>512 MB de RAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Placa de Vídeo</td>
+                                        <td>640x480 minimum resolution (Direct3D/OpenGL compatible card with at least
+                                            128MB)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Placa de som</td>
+                                        <td>2D sound compatible card</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h4>Navegue</h4>
+                    <ul class="footer-nav-list">
+                        <li class="my-1"><a href="#">Área do Usuário</a></li>
+                        <li class="my-1"><a href="#">Catálogo Completo</a></li>
+                        <li class="my-1"><a href="#">Mais Vendidos</a></li>
+                        <li class="my-1"><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4>Recursos</h4>
+                    <ul class="footer-nav-list">
+                        <li class="my-1"><a href="#">Fórum</a></li>
+                        <li class="my-1"><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <img class="footer-logo" src="assets/img/iaralogo_bgGradient.png" alt="Logo da IARA" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <small class="copyright">© 2023 IARA. Todos os direitos reservados.</small>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
